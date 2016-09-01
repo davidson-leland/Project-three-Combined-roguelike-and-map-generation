@@ -2,6 +2,8 @@
 using System.Collections;
 using System;
 
+//completely unchanged from original tutorial
+
 public class Heap<T> where T : IHeapItem<T> {
 
     T[] items;

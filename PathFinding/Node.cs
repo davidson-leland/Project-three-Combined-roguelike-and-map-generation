@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+//completely unchanged from original tutorial
+
 public class Node : IHeapItem<Node>
 {
 

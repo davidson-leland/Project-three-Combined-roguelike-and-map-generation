@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+//unchanged
+
 public class CameraController : MonoBehaviour {
 
     public GameObject player;

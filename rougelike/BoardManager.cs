@@ -118,7 +118,6 @@ public class BoardManager : MonoBehaviour
             rooms[i].CreatePaths(pathFinder, grid);
         }
 
-        //TestRun();
     }
     
     void addBoardToLists()
@@ -445,39 +444,6 @@ public class BoardManager : MonoBehaviour
 
         LayoutObjectAtRandom(enemyTiles, enemyCount, enemyCount);
 
-    }
-
-    void TestRun()
-    {
-        int[] r = new int[3];
-
-        for (int i = 0; i < 100; i++)
-        {
-            if (i != 0)
-            {
-                if (i % 2 == 0)
-                {
-                    r[0]++;
-                }
-
-                if (i % 3 == 0)
-                {
-                    r[1]++;
-                }
-
-                if (i % 5 == 0)
-                {
-                    r[2]++;
-                }
-            }
-
-            int enemyCount = (int)Mathf.Log(i, 2f);
-            int adjustedenemyCount = /*(int)Mathf.Log(i + r , 1.3f );*/ (r[0] / 2) + r[1] + (r[2] * 2);
-
-            Debug.Log("level #" + i + ". normal enemy count = " + enemyCount + ". modified enemy count = " + adjustedenemyCount);
-        }
-
-        
     }
 
     void FindClosestPositionToCorner(int inI, out int closestIndexI, out int closestIndexJ)

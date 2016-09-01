@@ -2,6 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 
+//unchanged and unused
+
 public class MeshGenerator : MonoBehaviour {
 
     public SquareGrid squareGrid;
